@@ -97,7 +97,7 @@ geometry_ = [Point(x,y) for x,y in zip(df_potvrdeni['Long'],df_potvrdeni['Lat'])
 geo_df=gpd.GeoDataFrame(df_potvrdeni, crs=crs_, geometry=geometry_)
 
 # LOAD THE SHP FILE
-gpdf=gpd.read_file('C:/Users/Josko/Desktop/my_projects/Covid_Cro/ne_10m_admin_0_countries.shp')
+gpdf=gpd.read_file('C:/Users/Desktop/my_projects/Covid_Cro/ne_10m_admin_0_countries.shp')
 
 # PLOT
 fig, ax = plt.subplots(figsize=(20, 18))
